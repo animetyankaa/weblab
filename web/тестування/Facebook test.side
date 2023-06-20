@@ -1,0 +1,132 @@
+{
+  "id": "e0355877-d601-4110-8270-4c69ce6a8e73",
+  "version": "2.0",
+  "name": "Facebook test",
+  "url": "https://uk-ua.facebook.com",
+  "tests": [{
+    "id": "719899ce-4260-4bf2-9eec-c415922a6aac",
+    "name": "Facebook test",
+    "commands": [{
+      "id": "251d85b8-54fe-468b-829b-d037c661152c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0b0ef13-472c-48e7-a4a7-6a78b22736d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x1037",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90ea428a-d623-40cb-b5cf-60a10ed135f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.localeSelectorList",
+      "targets": [
+        ["css=.localeSelectorList", "css:finder"],
+        ["xpath=//div[@id='pageFooter']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "110e0ba5-c972-4615-bd4d-926e4a1f6d2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Русский",
+      "targets": [
+        ["linkText=Русский", "linkText"],
+        ["css=li:nth-child(2) > .\\_sv4", "css:finder"],
+        ["xpath=//a[contains(text(),'Русский')]", "xpath:link"],
+        ["xpath=//a[@onclick='require(\"IntlUtils\").setCookieLocale(\"ru_RU\", \"uk_UA\", \"https:\\/\\/ru-ru.facebook.com\\/\", \"www_list_selector\", 0); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='pageFooter']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ru-ru.facebook.com/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Русский')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bb5a87d-2001-4754-9b68-13ebb88d9475",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=English (US)",
+      "targets": [
+        ["linkText=English (US)", "linkText"],
+        ["css=li:nth-child(3) > .\\_sv4", "css:finder"],
+        ["xpath=//a[contains(text(),'English (US)')]", "xpath:link"],
+        ["xpath=//a[@onclick='require(\"IntlUtils\").setCookieLocale(\"en_US\", \"ru_RU\", \"https:\\/\\/www.facebook.com\\/\", \"www_list_selector\", 1); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='pageFooter']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.facebook.com/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'English (US)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c9ca25b-6d22-4720-9d18-a43fedb1c6d5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Magyar",
+      "targets": [
+        ["linkText=Magyar", "linkText"],
+        ["css=li:nth-child(4) > .\\_sv4", "css:finder"],
+        ["xpath=//a[contains(text(),'Magyar')]", "xpath:link"],
+        ["xpath=//a[@onclick='require(\"IntlUtils\").setCookieLocale(\"hu_HU\", \"en_US\", \"https:\\/\\/hu-hu.facebook.com\\/\", \"www_list_selector\", 2); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='pageFooter']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://hu-hu.facebook.com/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Magyar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5006f0f8-c53d-4b84-984a-f92a38a35b92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Álláslehetőség",
+      "targets": [
+        ["linkText=Álláslehetőség", "linkText"],
+        ["css=li:nth-child(23) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Álláslehetőség')]", "xpath:link"],
+        ["xpath=//div[@id='pageFooterChildren']/ul/li[23]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/careers/?ref=pf')]", "xpath:href"],
+        ["xpath=//li[23]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Álláslehetőség')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66f9fa74-ce86-445a-be15-2b4000f976f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Українська",
+      "targets": [
+        ["linkText=Українська", "linkText"],
+        ["css=li:nth-child(3) > .\\_sv4", "css:finder"],
+        ["xpath=//a[contains(text(),'Українська')]", "xpath:link"],
+        ["xpath=//a[@onclick='require(\"IntlUtils\").setCookieLocale(\"uk_UA\", \"hu_HU\", \"https:\\/\\/uk-ua.facebook.com\\/\", \"www_list_selector\", 1); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='pageFooter']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://uk-ua.facebook.com/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Українська')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b00e56d0-5974-43bf-a756-329d8fb1c3d7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d07017e9-c675-42ab-9202-0d546b772974",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["719899ce-4260-4bf2-9eec-c415922a6aac"]
+  }],
+  "urls": ["https://uk-ua.facebook.com/"],
+  "plugins": []
+}

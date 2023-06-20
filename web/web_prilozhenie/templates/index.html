@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Зміна зображень</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#button1').click(function () {
+                $.post('/change_image', { image: 'image1.jpg' }, function (data) {
+                    $('#image').attr('src', 'static/images/' + data + '?' + new Date().getTime());
+                });
+            });
+
+            $('#button2').click(function () {
+                $.post('/change_image', { image: 'image2.jpg' }, function (data) {
+                    $('#image').attr('src', 'static/images/' + data + '?' + new Date().getTime());
+                });
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="content">
+        <h1>Зміна зображень</h1>
+        <button id="button1">Волейбол</button>
+        <button id="button2">7 смертних гріхів</button>
+        <br><br>
+        <img id="image" src="static/images/image1.jpg" alt="Зображення">
+    </div>
+</body>
+<style>
+    body {
+        display: table;
+        width: 100%;
+        height: 90vh;
+    }
+
+    img {
+        height: 700px;
+        width: 400px;
+    }
+
+    .content {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
+</html>

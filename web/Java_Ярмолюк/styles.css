@@ -1,0 +1,36 @@
+html,
+body {
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.image-container {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    transform: translate(+40px, +100%);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+}
